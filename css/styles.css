@@ -20,32 +20,59 @@ li {
   margin: 0;
   padding-left: 0;
 }
+img {
+  display: block;
+}
+button {
+  cursor: pointer;
+}
+
+
+.visuality-hidden {
+  position:absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.link {
+  text-decoration: none;
+}
+.list {
+  list-style: none;
+  padding: 0;
+
+}
+/*Main Styles*/
 body {
   font-family: Roboto, sans-serif;
   color: var(--slate);
   background-color: var(--white);
 }
-.link {
-  text-decoration: none;
+.container {
+  width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
-
-.list {
-  list-style: none;
-}
-
+ 
 /* Headlines and paragraphs styles */
 
-.section-headline {
+.headline {
+  margin-bottom: 72px;
   font-size: 36px;
- 
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
   text-transform: capitalize;
   color: var(--navyblue);
 }
-
 .card-title {
+  margin-bottom: 8px;
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
@@ -53,21 +80,37 @@ body {
   color: var(--navyblue);
   text-transform: capitalize;
 }
-
 .card-paragraph {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  text-transform: capitalize;
- 
-}
+  text-transform: capitalize
+  }
+.card-feature {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  }
+
 
 /* Header navigation styles */
-.page-leader {
+.top-page {
+  border-bottom: 1px solid var(--cornflower);
   
 }
-
+.top-container {
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+.navigation-list {
+  display: flex;
+  align-items: center;
+  
+}
 .link-logo {
+  margin-right: 76px;
   font-family: Raleway, sans-serif;
   font-size: 18px;
   line-height: 1.17;
@@ -82,8 +125,15 @@ body {
 .link-logo-top {
   color: var(--navyblue);
 }
-
-.nav-list-item-link {
+.navigation-menu-list {
+  display: flex;
+  align-items:center;
+  gap: 40px;
+  list-style-type: none;
+}
+.navigation-list-item-link {
+  display: block;
+  padding: 24px 0;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
@@ -93,50 +143,56 @@ body {
   text-transform: capitalize;
 }
 
-.nav-list-item-link:hover,
-.nav-list-item-link:focus {
+.navigation-list-item-link:hover,
+.navigation-list-item-link:focus {
   color: var(--ocean);
 }
 
 /* Header address list styles  */
-
-.dress-list {
+.top-contact {
   font-style: normal;
-  text-decoration: none;
-}
-
-.leader-dress-list-item {
-  text-decoration: none;
-  font-size: 16px;
-  font-style: normal;
+ /* font-size: 16px;
+ 
   line-height: 1.5;
   letter-spacing: 0.02em;
+  text-decoration: none; */
 }
-.leader-dress-link2{
+.top-contact-list {
+  
+  display:flex;
+  justify-content: flex-end;
+  gap: 40px;
+  list-style-type: none;
+}
+
+.top-contact-link{
+  text-decoration: none;
   font-size: 16px;
-  font-weight: 500;
+  /*font-weight: 500;*/
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--navyblue);
-  text-decoration: none;
+  color: var(--slate);
+  
   
 }
 
 
-.leader-dress-link2:hover,
-.leader-dress-link2:focus {
+.top-contact-link:hover,
+.top-contact-link:focus {
   color: var(--ocean);
 }
 
 /* main section styles */
 
-.main-section {
+.main-frame {
+  padding: 188px 0;
   background-color: var(--navyblue);
 }
 
 .main-title {
+  max-width: 496px;
+  margin: 0 auto 48px auto;
   font-size: 56px;
-  font-weight: 700;
   line-height: 1.07;
   letter-spacing: 0.02em;
   color: var(--white);
@@ -145,6 +201,11 @@ body {
 }
 
 .basic-switch {
+  margin: 0 auto;
+  min-width: 169px;
+  height: 56px;
+  border-radius: 4px;
+  display:block;
   font-family: Roboto, sans-serif;
   font-size: 16px;
   font-weight: 500;
@@ -164,26 +225,61 @@ body {
 
 /* Advantages section styles */
 
-.value-section {
+.division_1 {
+  padding: 120px 0;
   background-color: var(--white);
 }
-
+.advantages-list {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  list-style-type: none;
+}
+.advantages-link {
+  flex-basis:calc((100% - 3 * 24px) / 4);
+}
 /* Services section styles */
 
-.services-section {
+.division_2-services {
   background-color: var(--white);
 }
+.division_2-services-list {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  list-style-type: none; 
 
+}
+.division_2-services-link {
+  width:calc((100% - 3 * 16px) / 3);
+}
 /* Team section styles */
 
-.team-section {
+.division_3-team {
+  padding: 120px 0;
   background-color: var(--cloud);
 }
-
+.team-list {
+  display:flex;
+  align-items: center;
+  gap: 24px;
+}
 .team-list-item {
+  flex-basis: calc((100% - 3 * 24px) / 4)
+  border-radius:0px 0px 4px 4px;
   background-color: var(--white);
 }
 
+.team-list_1 {
+  padding:32px 0;
+  background-color: var(--white);
+}
+.worker-name {
+  text-align:center;
+}
+.worker-position {
+  text-align: center;
+}
 /* Footer styles */
 
 .page-footer {
