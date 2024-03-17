@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="description" content="WebStudio">
     <title>Studio</title>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/modern-normalize.min.css"
+    >
     <link rel="stylesheet" href="./css/styles.css" >
     <link rel="preconnect" href="https://fonts.googleapis.com" >
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
@@ -17,11 +21,11 @@
       <!--Header-->
       <div class="container-top-wrap">
       <nav class="navigation">
-        <a class="link-logo" href="./index.html"
-          >web<span class="link-logo-top">Studio</span></a
+        <a class="logo" href="./index.html"
+          >web<span class="logo-top">Studio</span></a
         >
 
-        <ul class="list">
+        <ul class="left-navigation-list">
           <li class="link"> 
             <a class="top-item" href="./index.html">studio</a>
           </li>
@@ -34,7 +38,7 @@
         </ul>
       </nav>
       <address class="contact-list">
-        <ul class="list">
+        <ul class="right-navigation-list">
           <li>
             <a href="mailto:info@devstudio.com" class="contact-link"
               >info@devstudio.com</a
@@ -61,31 +65,31 @@
     <!--Section_2_Values-->
       <section class="value-section">
         <div class="container">
-        <h2 class="section-headline" hidden>advantages</h2>
-        <ul class="list">
-          <li>
-            <h3 class="values-third-heading">strategy</h3>
+        <h2 class="visually-hidden">advantages</h2>
+        <ul class="value-list">
+          <li class="value-item">
+            <h3 class="list-titles">strategy</h3>
             <p class="detail-second-section">
               Our goal is to identify the business problem to walk away with the
               perfect and creative solution.
             </p>
           </li>
-          <li>
-            <h3 class="values-third-heading">punctuality</h3>
+          <li class="value-item">
+            <h3 class="list-titles">punctuality</h3>
             <p class="detail-second-section">
               Bring the key message to the brand's audience for the best price
               within the shortest possible time.
             </p>
           </li>
-          <li>
-            <h3 class="values-third-heading">diligence</h3>
+          <li class="value-item">
+            <h3 class="list-titles">diligence</h3>
             <p class="detail-second-section">
               Research and confirm brands that present the strongest digital
               growth opportunities and minimize risk.
             </p>
           </li>
-          <li>
-            <h3 class="values-third-heading">technologies</h3>
+          <li class="value-item">
+            <h3 class="list-titles">technologies</h3>
             <p class="detail-second-section">
               Design practice focused on digital experiences. We bring forth a
               deep passion for problem-solving.
@@ -98,7 +102,7 @@
       <section class="team-section">
         <div class="container">
         <h2 class="section-headline">Our Team</h2>
-        <ul class="list">
+        <ul class="crew-list">
          <li class="crew-list-item">
            <img
                 src="./images/member1.jpg"
@@ -107,7 +111,7 @@
                 height="260"
                 >
                 <div class="team-name">
-           <h3 class="team-third-heading">Mark Guerrero</h3>
+           <h3 class="list-titles">Mark Guerrero</h3>
            <p class="team-detail-section">Product Designer</p>
           </div>
            </li>
@@ -119,7 +123,7 @@
                 height="260"
                 >
                 <div class="team-name">
-             <h3 class="team-third-heading">Tom Ford</h3>
+             <h3 class="list-titles">Tom Ford</h3>
              <p class="team-detail-section">Frontend Developer</p>
              </div>
            </li>
@@ -131,7 +135,7 @@
                 height="260"
                 >
                 <div class="team-name">
-             <h3 class="team-third-heading">Camila Garcia</h3>
+             <h3 class="list-titles">Camila Garcia</h3>
              <p class="team-detail-section">Marketing</p>
            </div>
             </li>
@@ -143,7 +147,7 @@
                 height="260"
                 >
                 <div class="team-name">
-             <h3 class="team-third-heading">Daniel Wilson</h3>
+             <h3 class="list-titles">Daniel Wilson</h3>
              <p class="team-detail-section">UI Designer</p>
                 </div>
             </li>
@@ -154,8 +158,8 @@
       <section class="services-section">
         <div class="container">
         <h2 class="section-headline">our portfolio</h2>
-        <ul class="list">
-          <li>
+        <ul class="offer-list">
+          <li class="offer">
             <img
               src="./images/layout.jpg"
               alt="site overview"
@@ -163,11 +167,11 @@
               height="300"
             />
             <div class="offer-card">
-            <h3 class="third-heading-four-section">Banking App</h3>
+            <h3 class="list-titles">Banking App</h3>
                 <p class="offer-detail-four-section">App</p>
             </div>
               </li>
-          <li>
+          <li class="offer">
             <img
               src="./images/paypass.jpg"
               alt="payment with virtual creditcard on smartphone"
@@ -175,11 +179,11 @@
               height="300"
             />
             <div class="offer-card">
-            <h3 class="third-heading-four-section">Cashless Payment</h3>
+            <h3 class="list-titles">Cashless Payment</h3>
                   <p class="offer-detail-four-section">Marketing</p>
           </div>
                 </li>
-          <li>
+          <li class="offer">
             <img
               src="./images/mobile-version.jpg"
               alt="appview on computer desktop and smartphone"
@@ -187,11 +191,11 @@
               height="300"
             />
             <div class="offer-card">
-            <h3 class="third-heading-four-section">Meditation App</h3>
+            <h3 class="list-titles">Meditation App</h3>
             <p class="offer-detail-four-section">App</p>
             </div>
         </li>
-          <li>
+          <li class="offer">
             <img
               src="./images/drivers.jpg"
               alt="appview on computer desktop and smartphone"
@@ -199,11 +203,11 @@
               height="300"
             />
             <div class="offer-card">
-            <h3 class="third-heading-four-section">Taxi Service</h3>
+            <h3 class="list-titles">Taxi Service</h3>
             <p class="offer-detail-four-section">Marketing</p>
             </div>
           </li>
-          <li>
+          <li class="offer">
           <img
               src="./images/wallpaper.jpg"
               alt="lockscreen on smartphone"
@@ -211,11 +215,11 @@
               height="300"
             />
             <div class="offer-card">
-            <h3 class="third-heading-four-section">Screen Illustrations</h3>
+            <h3 class="list-titles">Screen Illustrations</h3>
             <p class="offer-detail-four-section">Design</p>
           </div>
           </li>
-          <li>
+          <li class="offer">
             <img
               src="./images/woman.jpg"
               alt="Girl with beautiful smile listen music on headphones"
@@ -223,7 +227,7 @@
               height="300"
             />
             <div class="offer-card">
-            <h3 class="third-heading-four-section">Online Courses</h3>
+            <h3 class="list-titles">Online Courses</h3>
             <p class="offer-detail-four-section">Marketing</p>
             </div>
           </li>
@@ -236,8 +240,8 @@
     <footer class="page-bottom">
       <div class="container">
       
-      <a class="link-logo" href="./index.html"
-      >web<span class="link-logo-bottom">Studio</span></a
+      <a class="logo" href="./index.html"
+      >web<span class="logo-bottom">Studio</span></a
     >
       <p class="bottom-description">
         Increase the flow of customers and sales for your business with digital
